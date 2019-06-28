@@ -38,7 +38,7 @@ describe('Human', function() {
   })
   //numbers are based on current life expectancy of humans on earth from google as of 2016
   //the idea is to use same function to calculate an average earthling's expectancy on each planet for easy comparison to current earthling.
-  
+
   it('should test if convertAge correctly stores average life expectancies in new variable', function() {
     const avgearthling = new Human ('John Doe', 72.04)
     avgearthling.convertAge();
@@ -47,5 +47,13 @@ describe('Human', function() {
     expect(avgearthling.marsAge).toEqual(135.44);
     expect(avgearthling.jupiterAge).toEqual(854.39);
     console.log(avgearthling);
+  })
+  //this test should check to compare the user's age to the average life expectamcy and return the difference as years left to live on that planet.
+  it('should test to compare the average life expectancy of an average earthling to the user and determine their time left on earth', function() {
+    const avgearthling = new Human ('John Doe', 72.04)
+    const earthling = new Human ('Daniel', 36)
+    avgearthling.convertAge();
+    earthling.convertAge();
+    expect (earthling.checkDeath(avgearthling)).toEqual(36.04)
   })
 });
