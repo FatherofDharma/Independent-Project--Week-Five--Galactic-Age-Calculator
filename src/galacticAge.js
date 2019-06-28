@@ -1,5 +1,5 @@
 //Business logic for galactic age calculator.
-
+// import $ from 'jquery';
 //creates class to store name and age of user
 
 export class Human {
@@ -19,5 +19,13 @@ export class Human {
     this.marsAge = Number((this.age * 1.88).toFixed(2));
     this.jupiterAge = Number((this.age * 11.86).toFixed(2));
   }
-  
+  checkDeath(average) {
+    let yearsleft = Number((average.age - this.age).toFixed(2));
+    if (this.age === average.age) {
+      return ('Sorry, but you have no expected years to live. Use your time wisely.');
+    } else if (this.age < average.age) {
+      return ('You will live ' + yearsleft + ' more years ' + this.name);
+    }
+  }
+
 }
