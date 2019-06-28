@@ -10,6 +10,7 @@ export class Human {
     this.venusAge = 0;
     this.marsAge = 0;
     this.jupiterAge = 0;
+    this.avglifespan = 72.04;
   }
 
   convertAge() {
@@ -18,4 +19,5 @@ export class Human {
     this.marsAge = Number((this.age * 1.88).toFixed(2));
     this.jupiterAge = Number((this.age * 11.86).toFixed(2));
   }
+  
 }
