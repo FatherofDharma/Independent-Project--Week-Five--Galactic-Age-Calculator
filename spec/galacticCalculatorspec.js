@@ -30,6 +30,11 @@ describe('Human', function() {
     let earthling = new Human ('Daniel', 30)
     earthling.convertAge();
     expect(earthling.marsAge).toEqual(56.40);
-    console.log(earthling.marsAge);
+  })
+  it('should test if the function convertAge can convert to jupiter age and store it in the Human object', function() {
+    let earthling = new Human ('Daniel', 30)
+    earthling.convertAge();
+    expect(earthling.jupiterAge).toEqual(355.80);
+    console.log(earthling.jupiterAge);
   })
 });
