@@ -23,6 +23,6 @@ describe('Human', function() {
   it('should test if the function convertAge can canvert to venus age and store it in the Human object', function() {
     let earthling = new Human ('Daniel', 36)
     earthling.convertAge();
-    expect(earthling.venusAge).toEqual(8.64);
+    expect(earthling.venusAge).toEqual(22.32);
   })
 });
