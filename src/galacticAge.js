@@ -15,6 +15,6 @@ export class Human {
   convertAge() {
     this.mercAge = this.age * .24;
     this.venusAge = this.age * .62;
-    this.marsAge = this.age * 1.88;
+    this.marsAge = (this.age * 1.88).toFixed(2);
   }
 }
