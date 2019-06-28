@@ -53,8 +53,8 @@ describe('Human', function() {
     const earthling = new Human ('Daniel', 36)
     avgearthling.convertAge();
     earthling.convertAge();
-    let noob = earthling.checkDeath(avgearthling)
-    console.log(noob);
+    let fate = earthling.checkDeath(avgearthling)
+    expect(fate).toEqual(36.04);
     // expect (earthling.checkDeath(avgearthling)).toEqual(36.04)
   })
 });

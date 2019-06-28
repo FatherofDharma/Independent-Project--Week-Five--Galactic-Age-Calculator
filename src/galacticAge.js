@@ -24,7 +24,7 @@ export class Human {
     if (this.age === average.age) {
       return ('Sorry, but you have no expected years to live. Use your time wisely.');
     } else if (this.age < average.age) {
-      return ('You will live ' + yearsleft + ' more years ' + this.name);
+      return yearsleft;
     }
   }
 
