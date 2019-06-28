@@ -7,6 +7,9 @@ export class Human {
     this.name = name;
     this.age = age;
     this.mercAge = 0;
+    this.venusAge = 0;
+    this.marsAge = 0;
+    this.jupiterAge = 0;
   }
 
   convertMercury() {
