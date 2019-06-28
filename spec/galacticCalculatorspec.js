@@ -53,8 +53,21 @@ describe('Human', function() {
     const earthling = new Human ('Daniel', 36)
     avgearthling.convertAge();
     earthling.convertAge();
-    let fate = earthling.checkDeath(avgearthling)
-    expect(fate).toEqual(36.04);
+    earthling.lifeLeft(avgearthling)
+    expect(earthling.yearsLeft).toEqual(36.04);
+  })
+  it('should test to compare the average life expectancy of an average earthling to the user and determine their time left on each planet', function() {
+    const avgearthling = new Human ('John Doe', 72.04)
+    const earthling = new Human ('Daniel', 36)
+    avgearthling.convertAge();
+    earthling.convertAge();
+    earthling.lifeLeft(avgearthling)
+    console.log(earthling);
+    expect(earthling.yearsLeft).toEqual(36.04);
+    expect(earthling.mercLeft).toEqual(126.80)
+    expect(earthling.venusLeft).toEqual(22.34)
+    expect(earthling.marsLeft).toEqual(67.76)
+    expect(earthling.jupiterLeft).toEqual(427.43)
     // expect (earthling.checkDeath(avgearthling)).toEqual(36.04)
   })
 });
