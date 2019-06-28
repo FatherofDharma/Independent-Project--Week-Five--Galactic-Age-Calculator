@@ -7,13 +7,13 @@ describe('Human', function() {
     expect(earthling.age).toEqual(36);
   });
 
-  it('should test if the function convertMercury can return the Humans age in mercury years', function() {
+  it('should test if the function convertAge can return the Humans age in mercury years', function() {
     let earthling = new Human('Daniel', 36)
-    expect(earthling.convertMercury()).toEqual(8.64);
+    expect(earthling.convertAge()).toEqual(8.64);
   })
-  it('should test if the function convertMercury can store the new value in the Human object', function() {
+  it('should test if the function convertAge can store the new value in the Human object', function() {
     let earthling = new Human ('Daniel', 36)
-    expect(earthling.convertMercury()).toEqual(8.64);
+    expect(earthling.convertAge()).toEqual(8.64);
     console.log(earthling.mercAge)
     expect(earthling.mercAge).toEqual(8.64);
   })

@@ -12,7 +12,7 @@ export class Human {
     this.jupiterAge = 0;
   }
 
-  convertMercury() {
+  convertAge() {
     this.mercAge += this.age * .24;
     return (this.age * .24);
   }
