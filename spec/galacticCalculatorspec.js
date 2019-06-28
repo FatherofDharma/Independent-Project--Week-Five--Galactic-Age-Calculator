@@ -11,4 +11,9 @@ describe('Human', function() {
     let earthling = new Human('Daniel', 36)
     expect(earthling.convertMercury()).toEqual(8.64);
   })
+  it('should test if the function convertMercury can store the new value in the Human object', function() {
+    let earthling = new Human ('Daniel', 36)
+    expect(earthling.convertMercury()).toEqual(8.64);
+    expect(earthiling.mercAge).toEqual(8.64);
+  })
 });

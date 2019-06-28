@@ -5,6 +5,16 @@
 
 ## Description
 
+This website will take a user's name and age, then convert the age to their corresponding age on various planets in our solar system.
+
+## Specs
+Spec
+
+|Behavior   |Input      |               |
+| --------- | :--------| :-------------|
+|Input a name and Age | Daniel, 36 | Daniel, 36
+|Multiplies the age by.24 and returns the result | 36 | 8.64|
+|
 
 
 ## Setup/Installation Requirements
