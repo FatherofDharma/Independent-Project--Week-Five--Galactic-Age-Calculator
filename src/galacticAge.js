@@ -13,8 +13,9 @@ export class Human {
   }
 
   convertAge() {
-    this.mercAge = this.age * .24;
-    this.venusAge = this.age * .62;
-    this.marsAge = (this.age * 1.88).toFixed(2);
+    this.mercAge = Number((this.age * .24).toFixed(2));
+    this.venusAge = Number((this.age * .62).toFixed(2));
+    this.marsAge = Number((this.age * 1.88).toFixed(2));
+    this.jupiterAge = Number((this.age * 11.86).toFixed(2));
   }
 }
