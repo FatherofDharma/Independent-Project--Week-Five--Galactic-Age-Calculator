@@ -10,7 +10,7 @@ export class Human {
   }
 
   convertMercury() {
-    console.log('I am in the function');
+    this.mercAge += this.age * .24;
     return (this.age * .24);
   }
 }
